@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 .PHONY: help
 help: ## helpを表示
-	@echo '  see: hogehoge'
+	@echo '  see: https://github.com/432ats/openai_sandbox'
 	@echo ''
 	@grep -E '^[%/0-9a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-22s\033[0m %s\n", $$1, $$2}'
 	@echo ''
